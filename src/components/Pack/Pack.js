@@ -1,4 +1,5 @@
 
+import { ArrowRightIcon } from '@heroicons/react/solid';
 import React from 'react';
 import Benefit from '../Benefit/Benefit';
 
@@ -15,6 +16,9 @@ const Pack = (props) => {
                 {
                     benefits.map(benefit => <Benefit benefit={benefit}></Benefit>)
                 }
+                <button className='flex bg-green-400 p-2 w-full rounded mt-4 text-xl font-bold text-white hover:text-green-300 justify-center'>Buy Now
+                <ArrowRightIcon className='w-7 ml-2'></ArrowRightIcon>
+                </button>
             </div>
         </div>
     );
